@@ -1,0 +1,32 @@
+{
+  "name": "Simple Cars Game",
+  "description": "guess based on body type and year",
+
+  "icon": "https://example.com/icon.png",
+  "backgroundImage": "https://example.com/bg.jpg",
+  "background": "#000000",
+  "backgroundImageOpacity": 0.3,
+
+  "features": [
+    {
+      "name": "production year",
+      "type": "number"
+    },
+    {
+      "name": "body type",
+      "type": "category"
+    }
+  ],
+  "data": [
+    {
+      "name": "Honda",
+      "production year": 1948,
+      "body type": "hatchback"
+    },
+    {
+      "name": "Chevrolet",
+      "production year": 1911,
+      "body type": "sedan"
+    }
+  ]
+}
