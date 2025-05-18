@@ -2,7 +2,12 @@
 // All packages except `@mantine/hooks` require styles imports
 import '@mantine/core/styles.css';
 
-import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from '@mantine/core';
+import {
+  ColorSchemeScript,
+  MantineProvider,
+  mantineHtmlProps,
+} from '@mantine/core';
+import { Navbar } from '@custom-wordle/ui-system';
 
 export const metadata = {
   title: 'Custom Wordle!',
@@ -20,7 +25,9 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider>
+          <Navbar>{children}</Navbar>
+        </MantineProvider>
       </body>
     </html>
   );

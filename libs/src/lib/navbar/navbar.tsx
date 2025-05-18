@@ -7,13 +7,11 @@ import {
   Button,
   Divider,
   Drawer,
-  Grid,
   Group,
   ScrollArea,
-  Stack,
   Text,
   useMantineColorScheme,
-  useMantineTheme,
+  useMantineTheme
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconMoonStars, IconSun } from '@tabler/icons-react';
@@ -33,9 +31,9 @@ export function Navbar({ children }: Props) {
   const dark = colorScheme === 'dark';
 
   const navlinks = [
-    { label: 'Home', href: '#' },
-    { label: 'Browse games', href: '#' },
-    { label: 'Create game', href: '#' },
+    { label: 'Home', href: '/' },
+    { label: 'Browse games', href: '/games' },
+    { label: 'Create game', href: '/createGame' },
   ];
 
   return (

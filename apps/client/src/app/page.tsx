@@ -6,9 +6,5 @@ const theme = createTheme({
 });
 
 export default function Index() {
-  return (
-    <>
-      <Navbar />
-    </>
-  );
+  return <>Home</>;
 }
