@@ -38,7 +38,7 @@ export function Navbar({ children }: Props) {
 
   return (
     <>
-      <Box pb={120}>
+      <Box pb={80} >
         <header className={classes.header}>
           <Group justify="space-between" h="100%">
             <Text>Custom Wordle!</Text>

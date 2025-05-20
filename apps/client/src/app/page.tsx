@@ -1,4 +1,5 @@
-import { createTheme } from '@mantine/core';
+import { Box, Container, createTheme, Grid, SimpleGrid } from '@mantine/core';
+// import {} from '@mantine/core/lib/mantine-core';
 import { Navbar } from '@custom-wordle/ui-system';
 
 const theme = createTheme({
@@ -6,5 +7,9 @@ const theme = createTheme({
 });
 
 export default function Index() {
-  return <>Home</>;
+  return (
+    <Container>
+      This is content
+    </Container>
+  );
 }
