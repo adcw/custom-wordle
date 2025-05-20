@@ -1,9 +1,11 @@
 // Import styles of packages that you've installed.
 // All packages except `@mantine/hooks` require styles imports
 import '@mantine/core/styles.css';
+import classes from './layout.module.css';
 
 import {
   ColorSchemeScript,
+  Container,
   MantineProvider,
   mantineHtmlProps,
 } from '@mantine/core';
@@ -24,7 +26,7 @@ export default function RootLayout({
       <head>
         <ColorSchemeScript />
       </head>
-      <body>
+      <body className={classes.body}>
         <MantineProvider>
           <Navbar>{children}</Navbar>
         </MantineProvider>
