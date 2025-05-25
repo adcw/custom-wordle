@@ -1,4 +1,4 @@
-import { GameItem } from '@custom-wordle/ui-system';
+// import { GameItem } from '@custom-wordle/ui-system';
 import {
   Card,
   Container,
@@ -13,11 +13,9 @@ import {
   ActionIcon,
 } from '@mantine/core';
 import { IconSearch } from '@tabler/icons-react';
+import { GamePreview } from '@custom-wordle/ui-system';
 
 export default function GamesPage() {
-
-  
-
   return (
     <Container>
       <Stack gap="md">
@@ -30,7 +28,7 @@ export default function GamesPage() {
               <TextInput
                 placeholder="AAA"
                 rightSection={
-                  <ActionIcon variant='subtle'>
+                  <ActionIcon variant="subtle">
                     <IconSearch />
                   </ActionIcon>
                 }
@@ -40,10 +38,12 @@ export default function GamesPage() {
         </Box>
 
         <SimpleGrid cols={2}>
-          <GameItem />
-          <GameItem />
-          <GameItem />
-          <GameItem />
+          <GamePreview />
+          <GamePreview />
+          <GamePreview />
+          <GamePreview />
+          <GamePreview />
+          <GamePreview />
         </SimpleGrid>
       </Stack>
     </Container>

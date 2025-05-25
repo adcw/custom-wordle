@@ -11,7 +11,7 @@ import {
   ScrollArea,
   Text,
   useMantineColorScheme,
-  useMantineTheme
+  useMantineTheme,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconMoonStars, IconSun } from '@tabler/icons-react';
@@ -38,7 +38,7 @@ export function Navbar({ children }: Props) {
 
   return (
     <>
-      <Box pb={80} >
+      <Box pb={80}>
         <header className={classes.header}>
           <Group justify="space-between" h="100%">
             <Text>Custom Wordle!</Text>

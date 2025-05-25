@@ -13,8 +13,5 @@
       "import": "./dist/index.js",
       "default": "./dist/index.js"
     }
-  },
-  "nx": {
-    "name": "ui-system"
   }
 }

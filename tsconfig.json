@@ -7,10 +7,13 @@
       "path": "./apps/client"
     },
     {
-      "path": "./libs"
+      "path": "./libs/ui-system"
     },
     {
-      "path": "./libs/"
+      "path": "./libs/data-access"
+    },
+    {
+      "path": "./libs/somelib"
     }
   ]
 }

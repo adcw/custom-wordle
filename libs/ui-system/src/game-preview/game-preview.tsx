@@ -6,7 +6,7 @@ export interface GameItemProps {
   onClick?: () => void;
 }
 
-export function GameItem(props: GameItemProps) {
+export function GamePreview(props: GameItemProps) {
   return (
     <Paper style={{ cursor: 'pointer' }} onClick={() => console.log('CLick')}>
       <Group grow align="flex-start">
@@ -29,4 +29,4 @@ export function GameItem(props: GameItemProps) {
   );
 }
 
-export default GameItem;
+export default GamePreview;
